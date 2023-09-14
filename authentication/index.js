@@ -39,8 +39,7 @@ app.get("/auth/github",async(req,res)=>{
     console.log(data)
     res.send('Signup in progress')
 })
-// const Client_ID = "5ce01c44488e4af289dd"
-// const Client_SECRET = "36679fd2c1243fd3ba5bd3d4dcb1bc165ac433bd"
+
 
 app.listen(process.env.PORT || 5000,async()=>{
     try {
