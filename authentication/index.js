@@ -1,8 +1,11 @@
 const express = require("express")
 const app = express()
 require("dotenv").config()
+
 const connection = require("./config/db")
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+
+
 app.get("/",(req,res)=>{
     res.send("Base Api EndPoint!")
 })
